@@ -376,6 +376,91 @@ header {
 .team__item-descr {
   font-size: 10px;
 }
+
+.feedback__item {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0 16px;
+  align-items: center;
+  justify-content: start;
+}
+
+.feedback__descr {
+  margin-right: 20px;
+}
+
+.feedback__item-video {
+  position: relative;
+}
+
+.feedback__item-videobtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+}
+
+.feedback__item-sociallink {
+  margin-bottom: 12px;
+}
+.feedback__item-name {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-family: "Yeseva One", serif;
+}
+.feedback__item-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.feedback__content {
+  padding-bottom: 110px;
+}
+
+.feedback__item-content {
+  padding-bottom: 70px;
+}
+
+.feedback__item-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+}
+
+.feedback__slider {
+  width: 760px;
+  overflow: hidden;
+}
+.swiper-pagination {
+  margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  background: #bea495;
+  width: 53px;
+  height: 4px;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #7b6152;
+}
+
+.certificates__slider {
+  width: 1135px;
+  overflow: hidden;
+}
+
+.certificates__descr {
+  margin-right: 20px;
+}
+
+.certificates__content {
+  padding-bottom: 114px;
+}
+
 /*  */
 /*  */
 /*  */
@@ -413,6 +498,12 @@ header {
 /*  */
 /*  */
 /*  */
+@media (max-width: 1150px) {
+  .feedback__slider {
+    width: 690px;
+  }
+}
+
 @media (max-width: 1050px) {
   .section__inner {
     grid-template-columns: 290px auto;
@@ -429,6 +520,15 @@ header {
   }
   .steps__item {
     gap: 0 30px;
+  }
+  .feedback__inner {
+    grid-template-columns: 260px auto;
+  }
+  .certificates--slide img {
+    width: 280px;
+  }
+  .certificates__slider {
+    width: 880px;
   }
 }
 
@@ -487,6 +587,24 @@ header {
   .steps__title {
     font-size: 30px;
   }
+  .feedback__item-video {
+    width: 280px;
+  }
+  .feedback__item-img {
+    width: 280px;
+  }
+  .feedback__item-videobtn img {
+    width: 95px;
+  }
+  .feedback__slider {
+    width: 650px;
+  }
+  .feedback__item-content {
+    padding-bottom: 45px;
+  }
+  .feedback__item-btn {
+    padding: 15px 25px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -511,6 +629,18 @@ header {
   .footer__social {
     justify-content: center;
   }
+
+  .feedback__item-text {
+    font-size: 10px;
+  }
+
+  .feedback__item-content {
+    width: 209px;
+  }
+
+  .feedback__item-btn {
+    right: 150px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -525,6 +655,36 @@ header {
 }
 
 @media (max-width: 768px) {
+  .feedback__item-video {
+    width: 200px;
+  }
+  .feedback__item-img {
+    width: 200px;
+  }
+  .feedback__item-videobtn img {
+    width: 95px;
+  }
+  .feedback__slider {
+    width: 447px;
+  }
+  .feedback__item-content {
+    padding-bottom: 45px;
+  }
+
+  .feedback__item-btn {
+    right: 50px;
+  }
+
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  .title {
+    font-size: 30px;
+  }
+
   body {
     font-size: 10px;
   }
@@ -698,6 +858,10 @@ header {
   .team__item-descr {
     font-size: 10px;
   }
+  .feedback__content {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 500px) {
@@ -793,6 +957,31 @@ header {
   .team__item-box {
     bottom: 10px;
     left: 100px;
+  }
+
+  .feedback__item {
+    grid-template-columns: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .feedback__slider {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .feedback__item-img {
+    width: 250px;
+    margin: 0 auto 20px;
+  }
+  .feedback__item-btn {
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 100px;
+  }
+  .feedback__item-videobtn {
+    top: 45%;
+    left: 60%;
   }
 }
 
